@@ -118,7 +118,7 @@
             android:src="@drawable/airetv_healthcare" />
 
         <ImageButton
-            android:id="@+id/onLine_education"
+            android:id="@+id/doctor"
             android:layout_width="267dp"
             android:layout_height="200dp"
             android:layout_below="@id/rl_vp"
@@ -128,20 +128,20 @@
             android:background="@drawable/sel_focus"
             android:scaleType="centerInside"
             android:selectAllOnFocus="true"
-            android:src="@drawable/airetv_education" />
+            android:src="@drawable/airetv_doctor2" />
 
         <ImageButton
-            android:id="@+id/doctor"
+            android:id="@+id/onLine_education"
             android:layout_width="267dp"
             android:layout_height="200dp"
             android:layout_below="@id/rl_vp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="25dp"
-            android:layout_toRightOf="@id/onLine_education"
+            android:layout_toRightOf="@id/doctor"
             android:background="@drawable/sel_focus"
             android:scaleType="centerInside"
             android:selectAllOnFocus="true"
-            android:src="@drawable/airetv_setting" />
+            android:src="@drawable/airetv_education" />
     </RelativeLayout>
 
     <ImageButton

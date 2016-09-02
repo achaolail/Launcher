@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aire.launcher"
+    package="com.doc.launcher"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="3.0" >
 
     <uses-sdk
         android:minSdkVersion="18"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="18" />
 
     <application
         android:icon="@drawable/icon"
@@ -23,13 +23,13 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>
         -->
 
 
         <!-- 作为桌面Activity -->
         <activity
-            android:name="com.aire.launcher.Launcher"
+            android:name="com.doc.launcher.Launcher"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:launchMode="singleTask" >
             <intent-filter>
@@ -40,23 +40,23 @@
                 <!-- 关键部分 结束 -->
             </intent-filter>
         </activity>
-          <activity
-            android:name=".AireWebViewActivity"
-            android:label="@string/title_activity_aire_web_view" >
+        <activity
+            android:name="com.doc.launcher.apps.AllApps"
+            android:label="@string/title_activity_all_apps" >
         </activity>
         <activity
-            android:name="com.aire.launcher.apps.AllApps"
-            android:label="@string/title_activity_all_apps" >
+            android:name="com.doc.launcher.AireWebViewActivity"
+            android:label="@string/title_activity_aire_web_view" >
         </activity>
         <!--
         <receiver android:name="com.test.myluncher.receiver.InnerRecevier" >
             <intent-filter>
                 <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS" />
             </intent-filter>
-        </receiver>
+        </receiver>
         -->
         <activity
-            android:name="com.aire.launcher.HealthActivity"
+            android:name="com.doc.launcher.HealthActivity"
             android:label="@string/title_activity_health" >
         </activity>
     </application>
