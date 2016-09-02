@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg11"
+    android:orientation="horizontal"
+    tools:context="com.airecenter.we.MainActivity" >
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/left"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0" >
+
+        <ImageButton
+            android:id="@+id/family_call"
+            android:layout_width="267dp"
+            android:layout_height="200dp"
+            android:background="@drawable/sel_focus"
+            android:scaleType="centerInside"
+            android:selectAllOnFocus="true"
+            android:src="@drawable/airetv_call" />
+
+        <ImageButton
+            android:id="@+id/move_play"
+            android:layout_width="267dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/family_call"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sel_focus"
+            android:scaleType="centerInside"
+            android:selectAllOnFocus="true"
+            android:src="@drawable/airetv_program" />
+
+        <RelativeLayout
+            android:id="@+id/rl_vp"
+            android:layout_width="750dp"
+            android:layout_height="385dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/family_call" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="750dp"
+                android:layout_height="385dp"
+                android:focusableInTouchMode="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_alignBottom="@id/viewpager"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/dot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/dot_layout" />
+
+                <ImageView
+                    android:id="@+id/dot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/dot_layout" />
+
+                <ImageView
+                    android:id="@+id/dot3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/dot_layout" />
+
+                <ImageView
+                    android:id="@+id/dot4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/dot_layout" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/home_safe"
+            android:layout_width="267dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/move_play"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sel_focus"
+            android:scaleType="centerInside"
+            android:selectAllOnFocus="true"
+            android:src="@drawable/airetv_security" />
+
+        <ImageButton
+            android:id="@+id/health"
+            android:layout_width="267dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/rl_vp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/home_safe"
+            android:background="@drawable/sel_focus"
+            android:scaleType="centerInside"
+            android:selectAllOnFocus="true"
+            android:src="@drawable/airetv_healthcare" />
+
+        <ImageButton
+            android:id="@+id/onLine_education"
+            android:layout_width="267dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/rl_vp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/health"
+            android:background="@drawable/sel_focus"
+            android:scaleType="centerInside"
+            android:selectAllOnFocus="true"
+            android:src="@drawable/airetv_education" />
+
+        <ImageButton
+            android:id="@+id/doctor"
+            android:layout_width="267dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/rl_vp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/onLine_education"
+            android:background="@drawable/sel_focus"
+            android:scaleType="centerInside"
+            android:selectAllOnFocus="true"
+            android:src="@drawable/airetv_setting" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/startapps"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/sel_focus"
+        android:focusable="true"
+        android:padding="20dp"
+        android:src="@drawable/right" />
+
+</LinearLayout>

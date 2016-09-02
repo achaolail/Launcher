@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgt"
+    android:orientation="horizontal"
+    tools:context="com.airecenter.we.MainActivity" >
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="20dp"
+        android:src="@drawable/left"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0" >
+
+        <Button
+            android:id="@+id/doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/online_doctor" />
+
+        <Button
+            android:id="@+id/onLine_education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doctor"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/on_line_education" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="500dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/doctor"
+            android:background="@drawable/image1" />
+
+        <Button
+            android:id="@+id/health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/onLine_education"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/health" />
+
+        <Button
+            android:id="@+id/family_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewpager"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/health"
+            android:background="@drawable/family_call" />
+
+        <Button
+            android:id="@+id/home_safe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewpager"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/family_call"
+            android:background="@drawable/home_safe" />
+
+        <Button
+            android:id="@+id/move_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewpager"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/home_safe"
+            android:background="@drawable/move_play" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/startapps"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@null"
+        android:focusable="true"
+        android:padding="20dp"
+        android:src="@drawable/right" />
+
+</LinearLayout>

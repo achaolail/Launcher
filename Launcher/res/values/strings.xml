@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyLanucher_PT</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_all_apps">所有应用程序</string>
+    <string name="title_activity_health">HealthActivity</string>
+    <string name="title_activity_aire_web_view">AireWebViewActivity</string>
+
+</resources>
