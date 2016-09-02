@@ -4,8 +4,6 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="lib" path="libs/slidingmenu.jar"/>
-	<classpathentry kind="lib" path="libs/okhttp-3.4.1.jar"/>
-	<classpathentry kind="lib" path="libs/okio-1.9.0.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="output" path="bin/classes"/>

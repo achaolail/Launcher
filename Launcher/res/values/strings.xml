@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MyLanucher_PT</string>
+    <string name="app_name">MyLanucher_PTUS</string>
+    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_all_apps">所有应用程序</string>
     <string name="title_activity_health">HealthActivity</string>
+    <string name="title_activity_tvprougram">TVProugramActivity</string>
     <string name="title_activity_aire_web_view">AireWebViewActivity</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="choose_software">Choose the software you use to add to your personal preferences center.</string>
+    <string name="usefull_software">There is the software your personal preferences center</string>
+    <string name="title_activity_base">BaseActivity</string>
 
 </resources>

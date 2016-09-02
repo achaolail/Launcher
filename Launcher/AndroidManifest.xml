@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aire.launcher"
+    package="com.us.launcher"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="2.0" >
 
     <uses-sdk
         android:minSdkVersion="18"
-        android:targetSdkVersion="21" />
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:icon="@drawable/icon"
@@ -23,13 +24,13 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>
         -->
 
 
         <!-- 作为桌面Activity -->
         <activity
-            android:name="com.aire.launcher.Launcher"
+            android:name=".Launcher"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:launchMode="singleTask" >
             <intent-filter>
@@ -40,12 +41,8 @@
                 <!-- 关键部分 结束 -->
             </intent-filter>
         </activity>
-          <activity
-            android:name=".AireWebViewActivity"
-            android:label="@string/title_activity_aire_web_view" >
-        </activity>
         <activity
-            android:name="com.aire.launcher.apps.AllApps"
+            android:name=".apps.AllApps"
             android:label="@string/title_activity_all_apps" >
         </activity>
         <!--
@@ -53,16 +50,27 @@
             <intent-filter>
                 <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS" />
             </intent-filter>
-        </receiver>
+        </receiver>
         -->
         <activity
-            android:name="com.aire.launcher.HealthActivity"
+            android:name=".HealthActivity"
             android:label="@string/title_activity_health" >
+        </activity>
+         <activity
+            android:name=".AddActivity"
+            android:label="@string/title_activity_add" >
+        </activity>
+         <activity
+            android:name=".AireWebViewActivity"
+            android:label="@string/title_activity_aire_web_view" >
+        </activity>
+        <activity
+            android:name=".TVProugramActivity"
+            android:label="@string/title_activity_tvprougram" >
         </activity>
     </application>
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />

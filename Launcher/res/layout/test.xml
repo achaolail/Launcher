@@ -1,8 +1,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgt"
+    android:background="@drawable/bg11"
     android:orientation="horizontal"
     tools:context="com.airecenter.we.MainActivity" >
 
@@ -19,67 +20,87 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:layout_weight="0" >
 
-        <Button
-            android:id="@+id/doctor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/online_doctor" />
+        <ImageButton
+            android:id="@+id/family_call"
+            android:layout_width="267dp"
+            android:layout_height="173dp"
+            android:background="@drawable/sel_focus"
+            android:scaleType="centerInside"
+            android:selectAllOnFocus="true"
+            android:src="@drawable/airetv_call" />
 
-        <Button
-            android:id="@+id/onLine_education"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/doctor"
+        <ImageButton
+            android:id="@+id/move_play"
+            android:layout_width="267dp"
+            android:layout_height="173dp"
+            android:layout_below="@id/family_call"
             android:layout_marginTop="25dp"
-            android:background="@drawable/on_line_education" />
+            android:background="@drawable/sel_focus"
+            android:scaleType="centerInside"
+            android:selectAllOnFocus="true"
+            android:src="@drawable/airetv_program" />
 
         <android.support.v4.view.ViewPager
             android:id="@+id/viewpager"
-            android:layout_width="500dp"
-            android:layout_height="160dp"
+            android:layout_width="680dp"
+            android:layout_height="380dp"
             android:layout_marginLeft="25dp"
-            android:layout_toRightOf="@id/doctor"
-            android:background="@drawable/image1" />
-
-        <Button
-            android:id="@+id/health"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/onLine_education"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/health" />
-
-        <Button
-            android:id="@+id/family_call"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/viewpager"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="20dp"
-            android:layout_toRightOf="@id/health"
-            android:background="@drawable/family_call" />
-
-        <Button
-            android:id="@+id/home_safe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/viewpager"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="20dp"
             android:layout_toRightOf="@id/family_call"
-            android:background="@drawable/home_safe" />
+            android:background="@drawable/image1"
+            android:focusableInTouchMode="false" />
 
-        <Button
-            android:id="@+id/move_play"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageButton
+            android:id="@+id/home_safe"
+            android:layout_width="267dp"
+            android:layout_height="173dp"
+            android:layout_below="@id/move_play"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/sel_focus"
+            android:scaleType="centerInside"
+            android:selectAllOnFocus="true"
+            android:src="@drawable/airetv_security" />
+
+        <ImageButton
+            android:id="@+id/health"
+            android:layout_width="220dp"
+            android:layout_height="173dp"
             android:layout_below="@id/viewpager"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:layout_toRightOf="@id/home_safe"
-            android:background="@drawable/move_play" />
+            android:background="@drawable/sel_focus"
+            android:scaleType="centerInside"
+            android:selectAllOnFocus="true"
+            android:src="@drawable/airetv_healthcare" />
+
+        <ImageButton
+            android:id="@+id/doctor"
+            android:layout_width="220dp"
+            android:layout_height="173dp"
+            android:layout_below="@id/viewpager"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/health"
+            android:background="@drawable/sel_focus"
+            android:scaleType="centerInside"
+            android:selectAllOnFocus="true"
+            android:src="@drawable/airetv_setting" />
+
+        <ImageButton
+            android:id="@+id/onLine_education"
+            android:layout_width="220dp"
+            android:layout_height="173dp"
+            android:layout_below="@id/viewpager"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/doctor"
+            android:background="@drawable/sel_focus"
+            android:scaleType="centerInside"
+            android:selectAllOnFocus="true"
+            android:src="@drawable/airetv_add" />
     </RelativeLayout>
 
     <ImageButton
@@ -88,7 +109,7 @@
         android:layout_height="80dp"
         android:layout_gravity="center"
         android:layout_weight="1"
-        android:background="@null"
+        android:background="@drawable/sel_focus"
         android:focusable="true"
         android:padding="20dp"
         android:src="@drawable/right" />
